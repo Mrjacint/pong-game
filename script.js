@@ -91,9 +91,6 @@ function createCanvas() {
   renderCanvas();
 }
 
-// Remove this
-// createCanvas();
-
 // Reset Ball to Center
 function ballReset() {
   ballX = width / 2;
@@ -199,7 +196,6 @@ function gameOver() {
     isGameOver = true;
     // Set Winner
     const winner = playerScore === winningScore ? "player 1" : "computer";
-    console.log(winner);
     showGameOverEl(winner);
   }
 }
